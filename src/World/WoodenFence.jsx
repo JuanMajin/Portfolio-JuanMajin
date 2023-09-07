@@ -5,14 +5,14 @@ import { useTexture } from "@react-three/drei";
 
 export function WoodenFence(props) {
   const { nodes } = useGLTF("/assets/models/woodenFence/woodenFence.glb");
-  const PATH = "/assets/materials/wood/";
+  const PATH = "/assets/materials/stone/";
 
   const propsTexture = useTexture({
-    map: PATH + 'woodColor.jpg',
+    map: PATH + 'rocky_trail_disp_1k.png',
     // displacementMap: PATH + 'woodHeight.png',
-    normalMap: PATH + 'woodNormal.jpg',
-    roughnessMap: PATH + 'woodRoughness.jpg',
-    aoMap: PATH + 'woodAO.jpg',
+    normalMap: PATH + 'rocky_trail_nor_dx_1k.jpg',
+    roughnessMap: PATH + 'rocky_trail_rough_1k.jpg',
+    aoMap: PATH + 'rocky_trail_ao_1k.jpg',
   })
 
   return (

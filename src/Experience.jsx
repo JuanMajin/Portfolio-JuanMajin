@@ -7,8 +7,10 @@ import Bat from "./World/Bat";
 const Experience = () => {
     return (
         <>
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[10, 10, 5]} intensity={2} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[0, -4, 10]} intensity={3} />
+            <directionalLight position={[0, 8, 20]} intensity={3} />
+
             <OrbitControls makeDefault/>
             <Bat />
             <Bee />
@@ -16,7 +18,7 @@ const Experience = () => {
             <WoodenFence position={[0, -2, 0]} />
             <mesh position-y={-2} rotation-x={-Math.PI / 2} >
                 <planeGeometry attach="geometry" args={[30,30]} />
-                <meshStandardMaterial attach="material" color="red" />
+                <meshStandardMaterial attach="material" color="grey" />
             </mesh>
         </>
     )

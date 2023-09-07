@@ -5,13 +5,13 @@ import Info from "./Info/Info"
 const App = () => {
     // Camera settings
     const cameraSettings = {
-        position: [0, 0, 5],
+        position: [-2, 5, 7],
         fov: 60
     }
 
     return (
         <>
-            <Info name={"JuanMajin"} biography={"Web 3D Developer"} />
+            <Info name={"JuanMajin"} biography={"Studen from univalle univesity - System engineer " }/>
             <Canvas
                 camera={cameraSettings}
             >
