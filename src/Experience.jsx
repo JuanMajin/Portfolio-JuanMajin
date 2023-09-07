@@ -15,10 +15,10 @@ const Experience = () => {
             <Bat />
             <Bee />
             <Tree position={[3, -2, -3]} scale={0.04} />
-            <WoodenFence position={[0, -2, 0]} />
+            <WoodenFence position={[0, -2, 0]} scale={1} />
             <mesh position-y={-2} rotation-x={-Math.PI / 2} >
-                <planeGeometry attach="geometry" args={[30,30]} />
-                <meshStandardMaterial attach="material" color="grey" />
+                <circleGeometry attach="geometry" args={[20]} />
+                <meshStandardMaterial attach="material" color="black"/>
             </mesh>
         </>
     )

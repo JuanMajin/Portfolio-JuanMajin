@@ -13,7 +13,7 @@
 .card-info{
     padding: 2rem;
     border-radius: 1rem;
-    border-bottom: 8px solid #FF5733;
+    border-bottom: 8px solid #a40000;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 1rem rgba(45, 45, 45, 0.1);
@@ -23,13 +23,13 @@
 .name{
     font-size: 2rem;
     font-weight: bold;
-    color: #FF5733;
+    color: #a40000;
 }	
 
 .biography{
     font-size: 1rem;
     font-weight: bold;
-    color: #454545;
+    color: #000000;
 }
 
 @media (max-width: 768px) {
