@@ -7,6 +7,7 @@ import Pumpink from "./World/Pumpink";
 import Tombstone from "./World/Tombstone";
 import Light from "./World/Lights";
 import Enviroments from "./World/Environments";
+import { Suspense } from "react";
 
 const Experience = () => {
     return (
@@ -14,16 +15,17 @@ const Experience = () => {
             <Enviroments />
             <Light/>
             <OrbitControls makeDefault/>
-            <Bat  />
-            <Tree position={[20, -2, 4]} scale={16}  />
-            <Tree position={[-20, -2, -4]} scale={16} />
-            <HauseH position={[1, 16, -12]} scale={20} rotation-y={-Math.PI / 2}  />
-            <Ghost scale={5}  rotation-y={-Math.PI / -2} />
-            <Pumpink  position={[20, -2, 8]} scale={5} />
-            <Pumpink  position={[22, -2, 8]} scale={4} />
-            <Pumpink  position={[18, -2, 8]} scale={4} />
-            <Tombstone position={[-20, -2, 10]} scale={0.04} rotation-y={-Math.PI / -2} />
-
+            <Suspense fallback={null}>
+      <Bat />
+      <Tree position={[20, -2, 4]} scale={16} />
+      <Tree position={[-20, -2, -4]} scale={16} />
+      <HauseH position={[1, 16, -12]} scale={20} rotation-y={-Math.PI / 2} />
+      <Ghost scale={5} rotation-y={-Math.PI / -2} />
+      <Pumpink position={[20, -2, 8]} scale={5} />
+      <Pumpink position={[22, -2, 8]} scale={4} />
+      <Pumpink position={[18, -2, 8]} scale={4} />
+      <Tombstone position={[-20, -2, 10]} scale={0.04} rotation-y={-Math.PI / -2} />
+    </Suspense>
            
             <mesh position-y={-2} rotation-x={-Math.PI / 2} receiveShadow >
                 <circleGeometry attach="geometry" args={[28]}  />
