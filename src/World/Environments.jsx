@@ -3,7 +3,7 @@ import { Cloud, Environment, Sky, Stars } from "@react-three/drei"
 const Enviroments =() =>{
     return(
         <>
-            {/* <Environment files={"/assets/environments/satara_night_8k.hdr"} background={true}
+            {/* <Environment files={"/assets/environments/satara_night_1k(1).hdr"} background={true}
             ground={{height:20 , scale:256}}/> */}
             {/* <Environment preset="night" background={true} ground={{height:20 , scale:256}} /> */}
             <Sky
