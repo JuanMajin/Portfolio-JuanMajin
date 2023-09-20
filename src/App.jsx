@@ -5,15 +5,16 @@ import Info from "./Info/Info"
 const App = () => {
     // Camera settings
     const cameraSettings = {
-        position: [-2, 5, 7],
+        position: [10, 14, 30],
         fov: 60
     }
 
     return (
         <>
-            <Info name={"JuanMajin"} biography={"Studen from univalle univesity - System engineer " }/>
+            <Info name={"JuanMajin"} biography={"Studen from univalle university - System engineer " }/>
             <Canvas
                 camera={cameraSettings}
+                shadows
             >
                 <Experience />
             </Canvas>
