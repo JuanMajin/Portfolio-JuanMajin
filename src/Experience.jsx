@@ -7,7 +7,7 @@ import Pumpink from "./World/Pumpink";
 import Tombstone from "./World/Tombstone";
 import Light from "./World/Lights";
 import Enviroments from "./World/Environments";
-import { Suspense } from "react";
+import { Suspense, useRef } from "react";
 import WelcomeText from "./World/WelcomeText";
 import Sign from "./World/Sing";
 
@@ -16,8 +16,8 @@ const Experience = () => {
         <>
             <Enviroments />
             <Light/>
-            {/* <OrbitControls target={[0,0,6]}/> */}
-            <OrbitControls makeDefault />
+            <OrbitControls target={[0,0,15]}/>
+            {/* <OrbitControls makeDefault /> */}
      <Suspense fallback={null}>
       <Bat />
       <Tree position={[20, 0, 4]} scale={16} />
@@ -29,7 +29,7 @@ const Experience = () => {
       <Pumpink position={[18, 0, 8]} scale={4} />
       <Tombstone position={[-20, 0, 10]} scale={0.04} rotation-y={-Math.PI / -2} />
       <WelcomeText/>
-      <Sign position={[0,0,15]} scale={1.4}/>
+      <Sign position={[0,0,15]} scale={1.4}  />
     </Suspense>
            
             <mesh position-y={0} rotation-x={-Math.PI / 2} receiveShadow >
