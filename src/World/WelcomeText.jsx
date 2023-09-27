@@ -1,7 +1,7 @@
 import { Float, Html, Text } from "@react-three/drei"
 
 const WelcomeText = () => {
-    const text =`Welcome to \n Halloween Hause`
+    const text =`Welcome to \n Halloween House`
     return(
         // <Html position={[0,3,0]} center distanceFactor={12} >
         //     <h2 className="welcome-text">HelloWord</h2>
