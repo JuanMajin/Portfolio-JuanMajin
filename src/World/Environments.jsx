@@ -32,7 +32,7 @@ const Enviroments =() =>{
              width={50} // Width of the full cloud
              depth={5} // Z-dir depth
              segments={20} // Number of particles
-             position-y={30}
+             position-y={10}
              />
         </>
     )

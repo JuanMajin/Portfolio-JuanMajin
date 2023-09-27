@@ -13,3 +13,9 @@ body,
 canvas{
     touch-action: none;
 }
+
+.welcome-text {
+    color: azure;
+    padding: 1rem;
+    user-select: none;
+}

@@ -1,12 +1,13 @@
 import { Canvas } from "@react-three/fiber"
 import Experience from "./Experience"
 import Info from "./Info/Info"
+import { Loader } from "@react-three/drei"
 
 const App = () => {
     // Camera settings
     const cameraSettings = {
-        position: [10, 14, 30],
-        fov: 60
+        position: [0,3,25],
+        fov: 70
     }
 
     return (
@@ -17,7 +18,9 @@ const App = () => {
                 shadows
             >
                 <Experience />
+                
             </Canvas>
+            <Loader />
         </>
     )
 }

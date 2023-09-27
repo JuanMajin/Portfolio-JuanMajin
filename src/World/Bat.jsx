@@ -16,7 +16,7 @@ const Bat = () => {
     }, [])
 
     return(
-        <mesh ref={batRef} position-x={-3} position-z={4} rotation-y={-Math.PI *2} scale={0.09} position-y={1.5} castShadow>
+        <mesh ref={batRef}  position={[-6,2,4]} rotation-y={-Math.PI *2} scale={0.09} castShadow>
             <primitive object={batModel.scene}/>
         </mesh>
     )
