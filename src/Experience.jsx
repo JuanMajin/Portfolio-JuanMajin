@@ -16,7 +16,7 @@ const Experience = () => {
         <>
             <Enviroments />
             <Light/>
-            <OrbitControls target={[0,0,15]}/>
+            <OrbitControls target={[0,0,15]} maxPolarAngle={Math.PI /2.1}/>
             {/* <OrbitControls makeDefault /> */}
      <Suspense fallback={null}>
       <Bat />

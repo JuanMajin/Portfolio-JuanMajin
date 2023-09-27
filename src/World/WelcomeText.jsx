@@ -11,7 +11,7 @@ const WelcomeText = () => {
             font="/assets/fonts/PermanentMarker-Regular.ttf"
             fontSize={2}
             color="azure"
-            position-y={10}
+            position-y={8}
             position-x={1.5}
             maxWidth={3}
             textAlign="center"
