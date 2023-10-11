@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { RigidBody } from "@react-three/rapier";
 
 export function Pumpink(props) {
   const { nodes, materials } = useGLTF("assets/models/pumpink/jack_o_lantern.glb");
   return (
-    <group {...props} dispose={null}>
+    <RigidBody type={"fixed"} colliders={"ball"}>
+      <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={20.265}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <mesh
@@ -28,6 +30,8 @@ export function Pumpink(props) {
         </group>
       </group>
     </group>
+    </RigidBody>
+    
   );
 }
 
