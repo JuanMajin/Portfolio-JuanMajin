@@ -40,7 +40,11 @@ export function Sign(props) {
           receiveShadow
           geometry={nodes.AboutMe.geometry}
           material={materials.green}
-          onClick={() => window.open(`https://www.linkedin.com/in/juan-jose-majin-845a9a247/`)}
+          onClick={() => {
+            window.open(`https://www.linkedin.com/in/juan-jose-majin-845a9a247/`);
+            setPlay(true);
+          }}
+      
         />
         <mesh
           castShadow
@@ -52,27 +56,15 @@ export function Sign(props) {
           rotation={[1.559, -0.139, -0.088]}
           scale={0.189}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.ContactMe.geometry}
-          material={materials.red}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.TextContactMe.geometry}
-          material={materials.text}
-          position={[0.02, 0.95, 0.089]}
-          rotation={[Math.PI / 2, 0, -0.087]}
-          scale={0.189}
-        />
+    
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Projects.geometry}
           material={materials.yellow}
-          onClick={() => window.open("https://github.com/JuanMajin")}
+          onClick={() =>{window.open("https://github.com/JuanMajin");
+          setPlay(true);
+        }}
         />
         <mesh
           castShadow
@@ -83,25 +75,6 @@ export function Sign(props) {
           rotation={[Math.PI / 2, 0, 0.087]}
           scale={0.189}
           
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Skills.geometry}
-          material={materials.red}
-          onClick={() =>{setActive(!active),setPlay(true)}}
-          
-          
-          
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.TextSkills.geometry}
-          material={materials.text}
-          position={[0, 1.42, 0.09]}
-          rotation={[1.56, 0.122, 0.088]}
-          scale={0.189}
         />
       </group>
     </group>

@@ -9,6 +9,7 @@ import Tombstone from "./Models/Tombstone";
 import WelcomeText from "./Text/WelcomeText";
 import Sign from "./Models/Sign";
 import { CuboidCollider, Physics, RigidBody } from "@react-three/rapier";
+import Led from "./Models/Led";
 
 
 
@@ -26,6 +27,7 @@ const Welcome = () => {
       <WelcomeText/>
       
       <Sign position={[0,0,15]} scale={1.4}  />
+      <Led />
     </Suspense>
           
             <RigidBody type={"fixed"} colliders={"cuboid"} position-y={[-0.4]} >
